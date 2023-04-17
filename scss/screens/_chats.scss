@@ -1,0 +1,90 @@
+.chat-list {
+  .user-component {
+    border-bottom: solid 1px $color-gray-100;
+  }
+}
+.main-chat {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s linear;
+  .chat__time-stamp {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $color-white;
+    margin: 1.6rem auto;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+.message-row {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  &__profile {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    .message {
+      &__author {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $color-gray-600;
+      }
+      &__info {
+        display: flex;
+        gap: 0.6rem;
+        align-items: flex-end;
+      }
+      &__bubble {
+        padding: 1.2rem;
+        background-color: $color-white;
+        border-radius: 0 0.8rem 0.8rem 0.8rem;
+        font-size: 1.4rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      &__time {
+        color: $color-gray-400;
+      }
+    }
+  }
+  &--own {
+    justify-content: flex-end;
+    .message {
+      &__bubble {
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 0.8rem 0.8rem 0 0.8rem;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Find - Kokoa Clone</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <ion-icon name="cellular"></ion-icon>
+        <span>LTE</span>
+        <ion-icon name="battery-full-outline"></ion-icon>
+      </div>
+    </div>
+    <!-- // Status Bar -->
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <a href="#">
+          <ion-icon name="search-outline"></ion-icon>
+        </a>
+        <a href="settings.html">
+          <ion-icon name="settings-outline"></ion-icon>
+        </a>
+      </div>
+    </header>
+    <!-- // Header-->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <ion-icon name="search"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification badge--dot"></span>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="find-screen">
+      <div class="control-bar">
+        <button type="button" class="control-bar__btn">
+          <ion-icon
+            name="qr-code-outline"
+            class="control-bar__btn--icon"
+          ></ion-icon>
+          <span class="control-bar__btn--txt">QR Code</span>
+        </button>
+        <button type="button" class="control-bar__btn">
+          <ion-icon
+            name="call-outline"
+            class="control-bar__btn--icon"
+          ></ion-icon>
+          <span class="control-bar__btn--txt">Add by Contacts</span>
+        </button>
+        <button type="button" class="control-bar__btn">
+          <ion-icon
+            name="id-card-outline"
+            class="control-bar__btn--icon"
+          ></ion-icon>
+          <span class="control-bar__btn--txt">Add by ID</span>
+        </button>
+        <button type="button" class="control-bar__btn">
+          <ion-icon
+            name="mail-outline"
+            class="control-bar__btn--icon"
+          ></ion-icon>
+          <span class="control-bar__btn--txt">Invite</span>
+        </button>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <div class="recommended-friends__body">
+          <div class="blank-msg">You have no recommended friends</div>
+        </div>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home<ion-icon
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </div>
+        <div class="open-chat__body">
+          <a href="#" class="open-post">
+            <div class="open-post__column">
+              <h5 class="open-post__title">BTS</h5>
+              <div class="open-post__hashtags">
+                <span class="open-post__hashtags--item">bts</span>
+                <span class="open-post__hashtags--item">army</span>
+                <span class="open-post__hashtags--item">friends</span>
+              </div>
+              <div class="open-post__members">
+                <span class="open-post__members--thumbs">
+                  <img src="./img/icons/icon_chat-bubble.png" alt="" />
+                </span>
+                <span class="open-post__members--num">802 members</span>
+                <span class="open-post__members--active">Active</span>
+              </div>
+            </div>
+            <div class="open-post__column">
+              <div class="open-post__thumbs">
+                <div>
+                  <img
+                    class="open-post__thumbs--img"
+                    src="./img/icons/icon_chat-bubble.png"
+                    alt=""
+                  />
+                </div>
+                <div class="open-post__thumbs--liked">
+                  <ion-icon name="heart"></ion-icon>
+                  <span>215</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="open-post">
+            <div class="open-post__column">
+              <h5 class="open-post__title">BTS</h5>
+              <div class="open-post__hashtags">
+                <span class="open-post__hashtags--item">bts</span>
+                <span class="open-post__hashtags--item">army</span>
+                <span class="open-post__hashtags--item">friends</span>
+              </div>
+              <div class="open-post__members">
+                <span class="open-post__members--thumbs">
+                  <img src="./img/icons/icon_chat-bubble.png" alt="" />
+                </span>
+                <span class="open-post__members--num">802 members</span>
+                <span class="open-post__members--active">Active</span>
+              </div>
+            </div>
+            <div class="open-post__column">
+              <div class="open-post__thumbs">
+                <div>
+                  <img
+                    class="open-post__thumbs--img"
+                    src="./img/icons/icon_chat-bubble.png"
+                    alt=""
+                  />
+                </div>
+                <div class="open-post__thumbs--liked">
+                  <ion-icon name="heart"></ion-icon>
+                  <span>215</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <div id="no-mobile">
+      <ion-icon name="sad-outline"></ion-icon>
+      <span>Your screen is too big</span>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

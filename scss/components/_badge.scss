@@ -1,0 +1,24 @@
+.badge {
+  z-index: 1;
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--dot {
+    z-index: 1;
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    right: -0.3rem;
+    top: -0.3rem;
+  }
+}

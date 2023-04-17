@@ -1,0 +1,55 @@
+.friends-display-link {
+  width: 100%;
+  background-color: $color-gray-100;
+  padding: 1rem;
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  .ion-icon {
+    color: $color-gray-400;
+  }
+}
+
+.friends-screen {
+  &__channel {
+    border-top: solid 1px $color-gray-100;
+    box-sizing: border-box;
+    &--header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      color: $color-gray-400;
+      padding: 1.2rem $horizontal-space;
+    }
+  }
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-primary;
+  color: $color-white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14rem;
+  z-index: 9999;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+}

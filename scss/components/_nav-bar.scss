@@ -1,0 +1,49 @@
+.nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  border-top: 1px solid #eaeaea;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    animation: appearBtnAnimation 0.4s ease-in forwards;
+  }
+  &__link {
+    color: $color-gray-blue;
+    font-size: 2.2rem;
+    position: relative;
+  }
+  &__notification {
+    position: absolute;
+    top: -0.45rem;
+    right: -0.9rem;
+    animation: notificationAnimation 1s ease-in-out forwards;
+  }
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: scale(60%);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(90%);
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,21 @@
+.screen-header {
+  position: sticky;
+  top: 2.5rem;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $horizontal-space;
+  box-sizing: border-box;
+  z-index: 999;
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  &__icons {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    color: $color-gray-blue;
+  }
+}

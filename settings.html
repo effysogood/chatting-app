@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Settings - Kokoa Clone</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <ion-icon name="battery-full-outline"></ion-icon>
+        <span>LTE</span>
+        <ion-icon name="flash"></ion-icon>
+      </div>
+    </div>
+    <!-- // Status Bar -->
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <button type="button" class="alt-header__btn">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <button type="button" class="alt-header__btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <!-- // Header-->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification badge--dot"></span>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="settings">
+      <ul class="settings-list">
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="lock-closed-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">Privacy</p>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="megaphone-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">Notices</p>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="information-circle-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">Version</p>
+            </div>
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--subtext">Lastest Version</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="settings-list">
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="notifications-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">
+                Notifications<span class="badge">N</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="person-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">Friends</p>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">Chats</p>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="laptop-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">
+                Display<span class="badge">N</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="color-palette-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">
+                Themes<span class="badge">N</span>
+              </p>
+            </div>
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--subtext"> Default Theme </span>
+            </div>
+          </a>
+        </li>
+        <li class="settings-list__item">
+          <a class="settings-list__link">
+            <div class="settings-list__link--column">
+              <span class="settings-list__link--icon"
+                ><ion-icon name="call-outline"></ion-icon
+              ></span>
+              <p class="settings-list__link--text">Call</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <div id="no-mobile">
+      <ion-icon name="sad-outline"></ion-icon>
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

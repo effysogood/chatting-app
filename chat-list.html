@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Chats - Kokoa Clone</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <ion-icon name="cellular"></ion-icon>
+        <span>LTE</span>
+        <ion-icon name="battery-full-outline"></ion-icon>
+      </div>
+    </div>
+    <!-- // Status Bar -->
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+        <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+        <a href="#">
+          <ion-icon name="musical-notes-outline"></ion-icon>
+        </a>
+        <a href="settings.html">
+          <ion-icon name="settings-outline"></ion-icon>
+        </a>
+      </div>
+    </header>
+    <!-- // Header-->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <ion-icon name="chatbubble"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification badge--dot"></span>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-screen chat-list">
+      <div class="user-component">
+        <div class="user-component__column">
+          <div class="user-component__avatar user-component__avatar--medium">
+            <img
+              class=""
+              src="./img/icons/icon_chat-bubble.png"
+              alt="프로필 이미지"
+            />
+          </div>
+          <div class="user-component__text">
+            <h4 class="user-component__title">Saeyoung Effy Choi</h4>
+            <p class="user-component__subtitle">
+              Please check my kokoa account info
+            </p>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <span class="badge">1</span>
+        </div>
+      </div>
+    </main>
+
+    <div id="no-mobile">
+      <ion-icon name="sad-outline"></ion-icon>
+      <span>Your screen is too big</span>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

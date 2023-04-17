@@ -1,0 +1,26 @@
+.alt-header {
+  position: sticky;
+  top: 2.5rem;
+  z-index: 999;
+  background-color: $color-white;
+  width: 100%;
+  padding: 1.2rem $horizontal-space;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  border-bottom: solid 1px $color-gray-100;
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__btn {
+    ion-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

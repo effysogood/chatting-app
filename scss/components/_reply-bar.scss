@@ -1,0 +1,75 @@
+.reply {
+  background-color: $color-gray-100;
+  width: 100%;
+  padding: 0.8rem $horizontal-space;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  border-top: solid 1px $color-gray-100;
+  font-size: 1.4rem;
+  &__column {
+    position: relative;
+    transition: all 0.2s ease-in;
+    &:nth-child(2) {
+      width: 92%;
+    }
+    .btn-group {
+      position: absolute;
+      top: 50%;
+      right: 0.8rem;
+      transform: translateY(-50%);
+      display: flex;
+      gap: 0.8rem;
+    }
+    .btn--icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-gray-600;
+      ion-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    .btn--submit {
+      transition: all 0.2s ease-in;
+      ion-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+      }
+      &.is-active {
+        color: $color-primary;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__textfield {
+    background-color: $color-white;
+    width: 100%;
+    position: relative;
+    border-radius: 100px;
+    border: solid 1px $color-gray-100;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    &:focus ~ .btn-group > .btn--submit {
+      color: $color-primary;
+      transform: rotate(90deg);
+    }
+  }
+  &:focus-within {
+    .reply__column {
+      &:nth-child(1) {
+        opacity: 0;
+        display: none;
+      }
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}

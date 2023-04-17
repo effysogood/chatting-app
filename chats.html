@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Chats - Kokoa Clone</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <ion-icon name="cellular"></ion-icon>
+        <span>LTE</span>
+        <ion-icon name="battery-full-outline"></ion-icon>
+      </div>
+    </div>
+    <!-- // Status Bar -->
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <button type="button" class="alt-header__btn">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Saeyoung Effy Choi</h1>
+      </div>
+      <div class="alt-header__column">
+        <button type="button" class="alt-header__btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <!-- // Header-->
+
+    <main class="main-chat">
+      <button type="button" class="chat__time-stamp">
+        Wednesday, May 5, 2023
+      </button>
+      <div class="main-chat__area">
+        <div class="message-row">
+          <div class="message-row__profile">
+            <img src="./img/icons/icon_chat-bubble.png" alt="" />
+          </div>
+          <div class="message-row__content">
+            <span class="message__author">Chang An</span>
+            <div class="message__info">
+              <span class="message__bubble">Hi!</span>
+              <span class="message__time">21:27</span>
+            </div>
+          </div>
+        </div>
+        <div class="message-row message-row--own">
+          <div class="message-row__content">
+            <div class="message__info">
+              <span class="message__time">21:27</span>
+              <span class="message__bubble">What you doing</span>
+            </div>
+          </div>
+        </div>
+        <div class="message-row message-row--own">
+          <div class="message-row__content">
+            <div class="message__info">
+              <span class="message__time">21:27</span>
+              <span class="message__bubble"
+                >Kakao talk has so many updates recently</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form action="#" class="reply">
+      <div class="reply__column">
+        <a href="#" class="btn--icon btn--add">
+          <ion-icon name="duplicate"></ion-icon>
+        </a>
+      </div>
+      <div class="reply__column">
+        <input
+          class="reply__textfield"
+          type="text"
+          placeholder="Write a message"
+        />
+        <div class="btn-group">
+          <a href="#" class="btn--icon">
+            <ion-icon name="happy"></ion-icon>
+          </a>
+          <button type="button" class="btn--icon btn--submit">
+            <ion-icon name="arrow-up-circle"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <ion-icon name="sad-outline"></ion-icon>
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
