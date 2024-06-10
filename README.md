@@ -1,3 +1,3 @@
-# Nomadcoders Kokoa Clone
+# Chatting Web Page
 
-HTML & CSS
+HTML & SCSS
